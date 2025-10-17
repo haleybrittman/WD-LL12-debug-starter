@@ -1,3 +1,7 @@
+const quiz = document.getElementById('quiz-form');
+quiz.addEventListener('submit', handleQuizSubmission);
+
+
 function handleQuizSubmission(e) {
   const { score, total } = calculateScore();
   displayQuizResult(score, total);
